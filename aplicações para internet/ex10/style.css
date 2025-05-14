@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .hero {
+    background: url('img/header.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 60px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+  }
+  
+  .welcome, .features, .gallery, .quote, footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .features {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    flex: 1 1 250px;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .feature .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .feature button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #6eb48c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .quote {
+    background: url('img/header.jpg') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    font-style: italic;
+  }
+  
+  footer {
+    background: #222;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .socials a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: white;
+  }
+  
+  .copy {
+    margin-top: 20px;
+    font-size: 0.8em;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .features {
+      flex-direction: column;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero-content h1 {
+      font-size: 2em;
+    }
+  }
+  
